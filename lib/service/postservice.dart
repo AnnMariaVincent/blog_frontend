@@ -15,7 +15,7 @@ class PostApiService{
           "phno": phno,
           "pin":pin,
           "email": email,
-          "pass":pass,
+          "password":pass,
 
 
         }
