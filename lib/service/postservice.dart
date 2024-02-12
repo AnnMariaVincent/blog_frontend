@@ -13,6 +13,7 @@ class PostApiService{
           "name": name,
           "age": age,
           "phno": phno,
+          "pin":pin,
           "email": email,
           "pass":pass,
 

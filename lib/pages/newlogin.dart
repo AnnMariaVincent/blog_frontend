@@ -18,14 +18,8 @@ class _newloginState extends State<newlogin> {
   TextEditingController pin=new TextEditingController();
   TextEditingController email=new TextEditingController();
   TextEditingController pass=new TextEditingController();
-  void sendbutton()async{
+  void sendbutton1()async{
     final response=await PostApiService().sendbutton(name.text, age.text, phno.text, pin.text,email.text,pass.text);
-    if (response['status'] == 'sucess') {
-      print("sucessfully add");
-    }
-    else {
-      print("error");
-    }
   }
 
   @override
@@ -93,7 +87,7 @@ class _newloginState extends State<newlogin> {
                 ),
               ),
               ElevatedButton(
-                  onPressed: sendbutton,
+                  onPressed: sendbutton1,
                   child: Text("REGISTER")
               ),
               ElevatedButton(
